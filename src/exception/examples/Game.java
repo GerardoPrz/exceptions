@@ -40,7 +40,7 @@ public class Game {
             DateTimeFormatter formatter = DateTimeFormatter.ofPattern("yyyy/MM/dd HH:mm:ss");
 
             writer.append("Guardado: ").append(now.format(formatter)).append(System.lineSeparator());
-            throw new IOException("IOException de prueba");
+
         } catch (IOException e) {
             throw new SaveScoreException("el mensaje",e);
             }
